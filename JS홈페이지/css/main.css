@@ -1,0 +1,433 @@
+@font-face {
+    src: url(https://fonts.google.com/share?selection.family=Roboto:wght@500);
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x:hidden;
+    height:2937px;
+}
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+#wrap {
+    min-height: 100%;
+    min-width: 1024px;
+    position: relative;
+    padding-bottom: 200px;
+}
+span>h1 {
+    color : #016BFF;
+    font-size: 48px;
+    font-family : 'roboto';
+    font-weight: bold;
+    position: relative;
+    margin: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+span>h1,.btnbox{
+    display: inline-block;
+}
+
+h2 {
+    color : #016BFF;
+    font-size: 48px;
+    font-family : 'roboto';
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    margin-left:0px;
+    margin-top:20px;
+    margin-bottom:200px;
+    display: inline-block;
+    
+}
+h3 {
+    font-size: 28px;
+    font-family : 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    margin-top:0px;
+
+}
+h4{
+    font-size: 16px;
+    font-family : 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    margin:0px;
+}
+h5 {
+    position: relative;
+    font-size: 16px;
+    font-family : 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    left: 15px;
+    top : -10px;
+}
+h6 {
+    position: relative;
+    font-size: 16px;
+    font-family : 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    left: 15px;
+    top : -30px;
+}
+
+/*네비바*/
+.navi-container {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /*목록 기호 제거*/
+}
+.navi-item {
+    text-decoration: none; /*밑줄 없애기*/
+    color: black;
+    padding: 30px;
+}
+.navi-item:visited{
+    color: black;
+}
+.navi-item :hover{
+    color: #016BFF;
+}
+.nav-img:hover{
+    cursor: pointer;
+}
+.slider{
+    width: 1903px;
+    height: 600px;
+    left:-8px;
+    position: relative;
+    margin : 0px auto;
+    overflow: hidden; /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */
+}
+ul.imgs{
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+}
+ul.imgs li{
+    position: absolute;
+    transition-delay: 1s; /* 새 슬라이드가 이동해 오는 동안 이전 슬라이드 이미지가 배경이 보이도록 지연 */
+    left : 1920px;
+    padding: 0;
+    margin: 0;
+}
+.bullets{
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 2;
+}
+.bullets label{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.55);
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.slider input[type=radio]{
+    display: none;
+}
+.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+/* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
+    background-color: #fff;
+}
+span{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.btnbox{
+    margin-left:25px;
+    width:235px;
+    height: 26px;
+    position: relative;
+}
+.btn{
+    border-color: #016BFF;
+    border-style: solid;
+    font-weight: bold;
+    border-radius:20px; 
+    width: 65px;
+    height: 26px;
+    position: absolute;
+   
+}
+.btn11 {
+    background-color:#016BFF;
+    color:white;
+    margin-left: 0px;
+ }
+.btn12 {
+    background-color:white;
+    color:#016BFF;
+    margin-left:75px;
+
+}
+.btn13 {
+    background-color:white;
+    color:#016BFF;
+    margin-left: 150px;
+ 
+ 
+}
+.introduce_box{
+    width: 80%;
+    position: relative;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.yellow {
+  background-color: #FFD83B;
+  width: 380px;
+  height: 280px;
+  box-shadow: 0 1px 1px 0px gray;
+  overflow: hidden;
+  padding: 0px;
+  text-align: center;
+}
+.firstbox{
+    position: relative;
+    width:100%;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    padding:0px;
+}
+.lastbox{
+    position: relative;
+    width:100%;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    padding:0px;
+    margin-top:50px;
+}
+.textbox{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top:280px;
+    justify-content: space-between;
+}
+.intro{
+    background-color: white;
+    width: 380px;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0px rgb(153, 152, 152);
+    
+}
+.good{
+    height:500px;
+    width:100%;
+    margin-top:200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.linebox{
+    display: flex;
+    width:100%;
+    height:20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.linebox>img{
+    margin-left: 115px;
+    margin-right: 115px;
+    width: 120px;
+}
+header {
+    width: 1024px;
+    height: 70px;
+    margin: 0px auto;
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-family: "roboto";
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    line-height: 70px;
+}
+header > nav + div > .nav-img {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    font-family: "Noto Sans KR", sans-serif;
+    width: 18px;
+    height: 18px;
+}
+.navi-item {
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    height: 100%;
+    text-align: left;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+.navi-item:hover {
+    color: #016bff;
+    text-decoration: none;
+}
+header > nav + div + button {
+    background: url("../images/js_img/캘린더/KakaoTalk_Photo_2023-02-03-17-42-12\ 004.png");
+    border: transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+    color: white;
+    top: 0px;
+    right: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    cursor: pointer;
+}
+nav {
+    position: absolute;
+    display: flex;
+    height: 100%;
+}
+.ABOUTcontent   {
+    width:100%;
+    height: 900px;
+    margin-top:200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.content{
+    text-align : center;
+    position: relative;
+    background-color: #ffffff;
+    width: 350px;
+    height: 150px;
+}
+footer{ /*푸터 크기, 위치, 색 설정*/
+    background-color: #016BFF;
+    width:100%;
+    height:200px;
+    font-family:'Roboto', sans-serif;
+    bottom:0px;
+    position: relative;
+    transform: translateY(-100%);
+}
+footer>span,footer>button,.about,.connect {/*푸터 내용물 폰트설정*/
+    display:inline-block;
+    font-family:'Roboto', sans-serif;
+    color: white;
+}
+footer>p{ /*푸터 제일 큰 글자(돌아간 거)설정*/
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size:32px;
+    -webkit-transform: rotate(-90deg);
+    margin-bottom:3px;
+    float: left;
+    position: absolute;
+    left:12%;
+    bottom:35%;
+}
+footer>span{ /*푸터 로고글자 설정*/
+    position:absolute;
+    left :20%;
+    bottom:50%;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+span>img{ /* 푸터로고설정 */
+    vertical-align: middle;
+    width:20px;
+}
+footer>button{  /*푸터버튼설정*/
+    border:1.5px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+   width:200px;
+   height:40px;
+   background-color: transparent;
+   position:absolute;
+   left :35%;
+   bottom:65%;
+   font-size:17px;
+}
+.about{ /* about 위치 설정*/
+   position: absolute;
+   left :60%;
+   top:-9%;
+   font-size: 18px;
+}
+.about *{/*about 내용물 글자 설정*/
+    font-size:14px;
+    font-family:'Roboto', sans-serif;
+    color: white;
+    font-weight: lighter;
+    text-decoration-line: none;
+    display: block;
+    padding-bottom: 15px;
+}
+.about>span,.connect>span{/*about, connect 글자 설정*/
+    font-size: 18px;
+}
+.connect{ /*connect 위치 설정*/
+    position:absolute;
+    top:15%;
+    left :68%;
+    font-size: 12px;
+    font-weight: lighter;
+}
+p>img{
+    vertical-align: middle;
+}
+
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/picture.css" />
+    <title>JS STUDY</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="sectionwrapper">
+        <header id="header">
+          <div class="nav">
+            <a class="nav item" href="../html/elbum.html">앨범</a>
+            <a class="nav item" href="../html/calender.html">캘린더</a>
+            <a class="nav item" href="../html/faq.html">FAQ</a>
+            <button
+              onclick="window.open('https://forms.gle/KfUyZn5A8ix6xFd48');"
+            >
+              지원하기
+            </button>
+            <div
+              class="nav-item-img"
+              onclick="location.href='../html/main.html';"
+            >
+              <img src="../images/js_img/logo.png" />
+            </div>
+          </div>
+        </header>
+
+        <section id="section1">
+          <section id="slider">
+            <input type="radio" name="slider" id="s1" checked />
+            <input type="radio" name="slider" id="s2" />
+            <input type="radio" name="slider" id="s3" />
+            <input type="radio" name="slider" id="s4" />
+
+            <label for="s1" id="slide1">
+              <img src="../images/js_img/앨범/photo3_4.jpg" alt="" />
+            </label>
+            <label for="s2" id="slide2"
+              ><img src="../images/js_img/앨범/photo3_1.jpg" alt=""
+            /></label>
+            <label for="s3" id="slide3"
+              ><img src="../images/js_img/앨범/photo3_2.jpg" alt=""
+            /></label>
+            <label for="s4" id="slide4"
+              ><img src="../images/js_img/앨범/photo3_3.jpg" alt=""
+            /></label>
+          </section>
+        </section>
+
+        <section id="section2">
+          <p class="tit">Group Mentoring</p>
+          <p>
+            그룹 스터디 활동은 그룹 멘토링과 함께 고정적으로 진행 하는 JS
+            스터디의 프로그램이다.<br />
+            학년별 프로젝트, 전체 프로젝트 등 다양한 자기개발의 기회를 제공한다.
+          </p>
+          <br /><br />
+          <div class="list"><a href="../html/elbum.html">목록 보기</a></div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

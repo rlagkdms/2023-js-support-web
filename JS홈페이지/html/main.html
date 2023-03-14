@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=0"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+    </style>
+    <title>JS STUDY</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <nav>
+          <a class="navi-item" href="../html/elbum.html">앨범</a>
+          <a class="navi-item" href="../html/calender.html">캘린더</a>
+          <a class="navi-item" href="../html/faq.html"> FAQ</a>
+        </nav>
+        <div class="nav-img" onclick="location.href='../html/main.html';">
+          <img src="../images/js_img/logo.png" />
+        </div>
+        <button onclick="window.open('https://forms.gle/KfUyZn5A8ix6xFd48');">
+          지원하기
+        </button>
+      </header>
+
+      <div class="slider">
+        <input type="radio" name="slide" id="slide1" checked />
+        <input type="radio" name="slide" id="slide2" />
+        <input type="radio" name="slide" id="slide3" />
+        <ul id="img" class="imgs">
+          <li><img src="../images/js_img/main/slide1.png" /></li>
+          <li><img src="../images/js_img/main/slide2.png" /></li>
+          <li><img src="../images/js_img/main/slide3.png" /></li>
+        </ul>
+        <div class="bullets">
+          <label for="slide1">&nbsp;</label>
+          <label for="slide2">&nbsp;</label>
+          <label for="slide3">&nbsp;</label>
+        </div>
+      </div>
+      <div class="introduce_box">
+        <span>
+          <h1>MEMBERS</h1>
+          <div class="btnbox">
+            <button
+              type="button"
+              class="btn btn11"
+              onclick="ChangeImg1(), ChangeText1(), btnChange(1)"
+            >
+              12기
+            </button>
+            <button
+              type="button"
+              class="btn btn12"
+              onclick="ChangeImg(), ChangeText(), btnChange(2)"
+            >
+              13기
+            </button>
+            <button type="button" class="btn btn13" onclick="">14기</button>
+          </div>
+        </span>
+
+        <div class="firstbox">
+          <div class="yellow box0">
+            <img src="../images/js_img/main/person/윤서.png" id="yun" />
+          </div>
+          <div class="yellow box1">
+            <img src="../images/js_img/main/person/혜원.png" id="yang" />
+          </div>
+          <div class="yellow box2">
+            <img src="../images/js_img/main/person/민지.png" id="park" />
+          </div>
+          <div class="textbox">
+            <div class="intro b0">
+              <h5 id="yunT">김윤서</h5>
+              <h6 id="yunTe">
+                뉴미디어소프트웨어과<br />
+                Java, C, C++, HTML, CSS, JavaScript, PHP, MySQL<br />
+                JS study 12기 동아리 회장 입니다!
+              </h6>
+            </div>
+            <div class="intro b1">
+              <h5 id="yangT">양혜원</h5>
+              <h6 id="yangTe">
+                뉴미디어웹솔루션과<br />
+                Java, C, Python, HTML, CSS, JavaScript<br />
+                JS study 파이팅 ~
+              </h6>
+            </div>
+            <div class="intro b2">
+              <h5 id="parkT">박민지</h5>
+              <h6 id="parkTe">
+                뉴미디어디자인과<br />
+                Illustrator, Photoshop<br />
+                최고의 동아리 JS study❤
+              </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="lastbox">
+          <div class="yellow box3">
+            <img src="../images/js_img/main/person/채영.png" id="im" />
+          </div>
+          <div class="yellow box4">
+            <img src="../images/js_img/main/person/유림.png" id="shin" />
+          </div>
+          <div class="yellow box5">
+            <img src="../images/js_img/main/person/수연.png" id="su" />
+          </div>
+
+          <div class="textbox">
+            <div class="intro b3">
+              <h5 id="imT">임채영</h5>
+              <h6 id="imTe">
+                뉴미디어소프트웨어과<br />
+                Java, C, C++, HTML, CSS, Python, MySQL, Kotlin<br />
+                JS study 2023에도 열심히합시다!🤩
+              </h6>
+            </div>
+
+            <div class="intro b4">
+              <h5 id="shinT">신유림</h5>
+              <h6 id="shinTe">
+                뉴미디어웹솔루션과<br />
+                Java, C, HTML, CSS, Python, JavaScript, PHP<br />
+                모두모두 열심히, 좋은 결과 있기를!
+              </h6>
+            </div>
+
+            <div class="intro b5">
+              <h5 id="suT">전수연</h5>
+              <h6 id="suTe">
+                뉴미디어디자인과<br />
+                ai, ps, id, ae, sketch<br />
+                디자인을 합시다~
+              </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="ABOUTcontent">
+          <h2>ABOUT US</h2>
+          <div class="good">
+            <div class="linebox">
+              <img src="../images/js_img/main/line.png" />
+              <img src="../images/js_img/main/line.png" />
+              <img src="../images/js_img/main/line.png" />
+            </div>
+            <div class="content">
+              <h3>실력 향상</h3>
+              <h4>
+                JS study 활동을 함으로써 전공 실력<br />
+                향상을 도모합니다.
+              </h4>
+            </div>
+
+            <div class="content">
+              <h3>친목 도모</h3>
+              <h4>
+                다양항 학과, 학생들이 협동하는 과정 <br />
+                속에서 동급생, 선후배 간의 친목을 다집니다.
+              </h4>
+            </div>
+
+            <div class="content">
+              <h3>공모전 경력</h3>
+              <h4>
+                여러 공모전에 출전하여 공모전 경험과<br />
+                수상 경력을 만듭니다.
+              </h4>
+            </div>
+            <div class="linebox">
+              <img src="../images/js_img/main/line.png" />
+              <img src="../images/js_img/main/line.png" />
+              <img src="../images/js_img/main/line.png" />
+            </div>
+            <div class="content">
+              <h3>멘토 활동</h3>
+              <h4>
+                같은 학과의 선후배끼리 mento-menti가<br />
+                되어 선배에게 주 1회 전공수업을 듣습니다.
+              </h4>
+            </div>
+
+            <div class="content">
+              <h3>공모전</h3>
+              <h4>
+                SmarteenAppChallenge등의<br />
+                개발과와 디자인과가 협업하여 할 수 있는<br />
+                IT 공모전에 참가합니다.
+              </h4>
+            </div>
+
+            <div class="content">
+              <h3>프로젝트</h3>
+              <h4>
+                동아리원들이 다 함께 웹페이지를 제작하거나<br />
+                동아리 홍보 계획을 세우는 등 동아리 운영에<br />
+                필요한 과제들을 해나갑니다.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>JS STUDY</p>
+      <span><img src="../images/js_img/footer/푸터로고.png" /> JS STUDY</span>
+      <button onclick="window.open('https://forms.gle/KfUyZn5A8ix6xFd48');">
+        join the JS study
+      </button>
+      <nav class="about">
+        <span>ABOUT</span>
+        <a href="../html/elbum.html">gallery</a>
+        <a href="../html/calender.html">calender</a>
+        <a href="../html/faq.html">faq</a>
+      </nav>
+
+      <div class="connect">
+        <span>CONNECT</span>
+        <p><img src="../images/js_img/footer/인스타.png" /> : @js_mirim</p>
+        <p>
+          <img src="../images/js_img/footer/메일.png" /> : d2136@e-mirim.hs.kr
+        </p>
+        <p><img src="../images/js_img/footer/번호.png" /> : 010-4187-8713</p>
+      </div>
+    </footer>
+  </body>
+</html>
